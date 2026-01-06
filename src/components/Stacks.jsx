@@ -21,7 +21,7 @@ const Stacks = () => {
             title: 'Database',
             items: [
                 { name: 'MySQL', color: '#4479A1' },
-                { name: 'Oracle', color: '#F80000' },
+                // { name: 'Oracle', color: '#F80000' },
                 { name: 'PostgreSQL', color: '#4169E1' },
             ]
         },
