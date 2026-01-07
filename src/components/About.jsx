@@ -9,7 +9,7 @@ const About = () => {
                     <p className="about-text">
                         저는 <strong>FE, BE, DB 등 개발 전과정</strong>에 걸쳐 사용자의 요구사항을 구현하는 <strong>풀스택 개발자</strong>를 꿈꾸고 있습니다.
                         <br /><br />
-                        * <strong>Claude, ChatGPT, Gemini, Antigravity</strong> 등 다양한 <strong>AI 에이전트</strong>를 활용한 생산성 향상
+                        * <strong>Claude, ChatGPT, Gemini</strong> 등 다양한 LLM과 <strong>Antigravity 기반 AI 에이전트 시스템</strong>을 활용한 생산성 향상 경험
                         <br />
                         * IT 연합 동아리 <strong>멋쟁이사자처럼</strong>에서 <strong>2년간 운영진</strong>으로 활동하며 <strong>협업 및 프로젝트 리딩</strong> 경험
                         <br />

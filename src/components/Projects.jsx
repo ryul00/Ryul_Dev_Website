@@ -97,7 +97,11 @@ const Projects = () => {
                                 <h3 className="project-title">{project.title}</h3>
                             </div>
                             <p className="project-description">{project.description}</p>
-                            <span className="project-role">{project.role}</span>
+                            <div className="project-role">
+                                {project.role.split(/[,&]/).map((part, i) => (
+                                    <div key={i}>{part.trim()}</div>
+                                ))}
+                            </div>
                             {project.links.length > 0 && (
                                 <div className="project-links">
                                     {project.links.map((link, linkIdx) => (

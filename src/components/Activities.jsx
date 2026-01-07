@@ -13,10 +13,13 @@ const Activities = () => {
             description: '모집 페이지 프로젝트, 부원 모집 및 면접 진행, Java/Spring 세션 진행, 연합 해커톤 팀장 참여 등'
         },
         {
-            period: '2024.12 ~',
+            period: '2024.12 ~ 2025.12',
             title: 'LikeLion 13th',
             role: '프론트엔드 운영진',
-            description: '모집 페이지 프로젝트, 부원 모집 및 면접 진행, React 개발 및 Vercel 빌드 배포 세션 진행, 연합 해커톤 팀장 참여 등'
+            description: '모집 페이지 프로젝트, 부원 모집 및 면접 진행, React 개발 및 Vercel 빌드 배포 세션 진행, 연합 해커톤 팀장 참여 등',
+            links: [
+                { label: '세션자료', url: 'https://1st-front-session-repo.vercel.app/' }
+            ]
         },
         {
             period: '2024.12 ~ 2025.09',
@@ -44,7 +47,26 @@ const Activities = () => {
                             <span className="timeline-date">{activity.period}</span>
                             <h3 className="timeline-title">{activity.title}</h3>
                             <p className="timeline-role">{activity.role}</p>
-                            <p className="timeline-description">{activity.description}</p>
+                            <div className="timeline-description">
+                                {activity.description.split(/[,&]/).map((part, i) => (
+                                    <div key={i}>{part.trim()}</div>
+                                ))}
+                            </div>
+                            {activity.links && activity.links.length > 0 && (
+                                <div className="activity-links">
+                                    {activity.links.map((link, linkIdx) => (
+                                        <a
+                                            key={linkIdx}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="activity-link"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
