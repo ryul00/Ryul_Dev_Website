@@ -15,7 +15,7 @@ const About = () => {
                         <br />
                         * <strong>ICT 인턴십</strong>을 통한 <strong>실무 환경</strong>에서의 협업 및 개발 경험
                         <br /><br />
-                        새로운 아이디어 구현뿐만 아니라,
+                        <strong>새로운 아이디어 구현</strong> 뿐만 아니라,
                         기존 서비스를 <strong>유지 개선</strong>하는 과정 또한 즐기고 있습니다.
                     </p>
 
