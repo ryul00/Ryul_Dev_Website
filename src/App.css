@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -1101,6 +1106,22 @@
 
 @media (max-width: 768px) {
   /* section-hint removed from display: none to show it on mobile */
+}
+
+/* Detail Navigation integrated into Global Navbar */
+.nav-links li a {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
 }
 
 .detail-list {

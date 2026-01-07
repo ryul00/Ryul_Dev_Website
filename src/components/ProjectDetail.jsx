@@ -40,7 +40,7 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Members Section */}
-                        <section className="detail-section">
+                        <section id="members" className="detail-section">
                             <h2 className="section-subtitle">프로젝트 멤버</h2>
                             <div className="members-grid">
                                 {detail.members && detail.members.map((member, i) => {
@@ -81,8 +81,8 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Service Background */}
-                        <section className="detail-section">
-                            <h2 className="section-subtitle">서비스 배경</h2>
+                        <section id="background" className="detail-section">
+                            <h2 className="section-subtitle">서비스 배경(소개)</h2>
                             <div className="glass-card">
                                 <ul className="detail-list">
                                     {detail.background.map((item, i) => (
@@ -100,7 +100,7 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Tech Stack Section */}
-                        <section className="detail-section">
+                        <section id="stacks" className="detail-section">
                             <h2 className="section-subtitle">사용 기술</h2>
                             <div className="tech-stack-container">
                                 {Object.entries(detail.techStack).map(([category, icons], i) => (
@@ -126,7 +126,7 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Public Data & API Section */}
-                        <section className="detail-section">
+                        <section id="data" className="detail-section">
                             <h2 className="section-subtitle">활용 데이터 및 명세</h2>
                             <div className="data-grid">
                                 {detail.publicData && detail.publicData.map((d, i) => (
@@ -151,7 +151,7 @@ const ProjectDetail = () => {
                         {/* Schedule Section */}
                         {detail.schedule && (
                             <>
-                                <section className="detail-section">
+                                <section id="schedule" className="detail-section">
                                     <h2 className="section-subtitle">프로젝트 일정</h2>
                                     <div className="schedule-container">
                                         <table className="schedule-table">
@@ -181,7 +181,7 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Features Section */}
-                        <section className="detail-section">
+                        <section id="features" className="detail-section">
                             <h2 className="section-subtitle">주요 기능</h2>
                             <div className={`features-grid ${detail.isMobileFeatures ? 'is-mobile' : ''} ${detail.useHoverEffect ? 'has-hover-effect' : ''}`}>
                                 {detail.features && detail.features.map((f, i) => (
@@ -198,9 +198,9 @@ const ProjectDetail = () => {
                         <hr className="detail-divider" />
 
                         {/* Video Section */}
-                        <section className="detail-section">
+                        <section id="video" className="detail-section">
                             <h2 className="section-subtitle">
-                                프로젝트 시연 영상
+                                시연 영상
                                 <span className="section-hint"> 클릭하면 영상링크로 이동합니다.</span>
                             </h2>
                             <div className="video-section-content">
