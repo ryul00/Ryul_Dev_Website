@@ -5,6 +5,7 @@ import { projectsData } from '../data/projectsData';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const { pathname } = location;
   const isDetailPage = pathname.startsWith('/project/');
   const projectId = isDetailPage ? pathname.split('/project/')[1] : null;
