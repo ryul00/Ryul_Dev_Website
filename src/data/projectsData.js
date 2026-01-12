@@ -163,7 +163,7 @@ export const projectsData = [
             { label: 'Frontend', url: 'https://github.com/ryul00/capstone_Front_Repo.git' }
         ],
         detail: {
-            fullTitle: '2024-1 산학 협력 캡스톤 프로젝트 <br> 똑똑하ZOO? (11 팀)',
+            fullTitle: '2025-1 산학 협력 캡스톤 프로젝트 <br> 똑똑하ZOO? (11 팀)',
             subtitle: '소켓 기반 멀티플레이 호환 종합 두뇌게임 “똑똑하Zoo?”',
             members: [
                 { name: '유광렬', github: 'ryeol00', roleIcon: 'nodejs', avatar: 'https://avatars.githubusercontent.com/u/129136966?v=4' },
